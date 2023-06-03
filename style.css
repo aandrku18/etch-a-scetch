@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.name {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 50px;
+}
+
+.container {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    border: 1px solid gray;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+
+
+.buttons .selected {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected div {
+    padding: 0;
+}
