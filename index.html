@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="name">Etch-a-Scetch</div>
+    
     <div class="buttons-container">
         <div class="buttons">
             <div class="selected">
                 <div>Pick up a color:</div>
                 <input type="color" id="color-palette">
             </div>
-            <div class="selected">
-                <input type="range" id="grid_size" value="24" min="1" max="64">
+            <div class="selected" id="rangeinput">
+                <div>
+                    <input type="range" id="grid_size" value="24" min="1" max="64">
+                </div>
+                
+                <div id="grid_size_text">smth</div>
             </div>
         </div>
-        <div class="container"></div>
+        <div>
+            <div class="name">Etch-a-Scetch</div>
+            <div class="container"></div>
+        </div>
+        
     </div>
     <script src="script.js"></script>  
 </body>
