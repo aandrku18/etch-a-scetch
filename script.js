@@ -5,6 +5,13 @@ let range_input = document.querySelector('#grid_size')
 let range_input_div = document.querySelector('#rangeinput')
 let color = document.querySelector('#color-palette')
 let grid_size_text = document.querySelector('#grid_size_text')
+let body = document.querySelector('body')
+
+let mouseDown = 0;
+
+body.addEventListener('mousedown', () => mouseDown = true)
+body.addEventListener('mouseup', () => mouseDown = false)
+
 
 function generateGrids() {
 
@@ -35,7 +42,7 @@ function generateGrids() {
 
     for (let i = 0; i < grids.length; i++) {
         grids[i].addEventListener('mousemove', function(e) {
-            this.style['background-color'] = color.value
+            if (mouseDown) this.style['background-color'] = color.value
         })
     }
 }
